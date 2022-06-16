@@ -1,0 +1,16 @@
+video: 
+https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=1
+
+Pro tips:
+	-make routes + controllers folders
+	-handle routes in server.js by defining a route parent url requiring a route.js file
+		ex: backend/server.js
+	-in controllers files: handle the actions of the routes by placing them in one file
+		ex: mern\backend\controllers\goalController.js
+	-in routes files: routes with same url but different action methods can be grouped up
+		ex: router.route('/').get(getGoals).post(setGoal)
+	-override the errorhandler so it displays certain useful information in production (not in development)
+		ex: 28:40 in the youtube video
+	-Use the  error handler instead of the try catch by downloading the express async handler
+		install: npm i express-async-handler outside the backend folder ( in the root folder)
+	
