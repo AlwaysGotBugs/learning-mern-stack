@@ -14,3 +14,5 @@ Pro tips:
 	-Use the  error handler instead of the try catch by downloading the express async handler
 		install: npm i express-async-handler outside the backend folder ( in the root folder)
 	
+
+stopped at 40 mnts
