@@ -3,7 +3,7 @@ const colors = require("colors");
 const dotenv = require("dotenv").config();
 const { errorHandler } = require("./middleware/errorMiddleware");
 const connectDB = require("./config/db");
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 connectDB();
 
@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/goals", require("./routes/goalRoutes"));
+app.use("/api/users", require("./routes/userRoutes"));
 // overriding the errorhandler (displays information in postman for example, and to do so, we create errorMiddleware.js)
 app.use(errorHandler);
 
