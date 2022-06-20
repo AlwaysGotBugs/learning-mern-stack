@@ -1,4 +1,4 @@
-video: 
+video:
 https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=1
 
 Pro tips:
@@ -13,6 +13,5 @@ Pro tips:
 		ex: 28:40 in the youtube video
 	-Use the  error handler instead of the try catch by downloading the express async handler
 		install: npm i express-async-handler outside the backend folder ( in the root folder)
-	
-
-stopped at 40 mnts
+	- linking 2 models together such as goal and user requires adding a link in the goal models
+		ex: the user json part in the routes/goalRoutes.js
